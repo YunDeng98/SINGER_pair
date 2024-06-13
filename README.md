@@ -13,3 +13,4 @@ The mutation map file should be of the following format, that each row contains 
 1000 2000 1e-8
 2000 5000 2e-8
 ```
+the map must **fully cover** the VCF file from the first to the last variant
