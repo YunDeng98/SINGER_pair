@@ -1,2 +1,2 @@
 # SINGER_pair
-SINGER when specifically applied to 2 sequences 
+SINGER when specifically optimized to 2 sequences 
