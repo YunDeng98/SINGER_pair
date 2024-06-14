@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6AA0FDD22C175D3B00541007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDD12C175D3B00541007 /* main.cpp */; };
+		6AA0FDDA2C175D5700541007 /* PSMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDD82C175D5700541007 /* PSMC.cpp */; };
+		6AA0FDDD2C175D6700541007 /* VCF_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDDB2C175D6700541007 /* VCF_reader.cpp */; };
+		6AA0FDE02C175D9F00541007 /* Rate_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDDE2C175D9F00541007 /* Rate_map.cpp */; };
+		6AA0FDE32C17C11A00541007 /* Decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDE12C17C11A00541007 /* Decoder.cpp */; };
+		6AA0FDE62C18C9F200541007 /* Scaler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AA0FDE42C18C9F200541007 /* Scaler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		6AA0FDCE2C175D3B00541007 /* SINGER_pair */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SINGER_pair; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA0FDD12C175D3B00541007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6AA0FDD82C175D5700541007 /* PSMC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSMC.cpp; sourceTree = "<group>"; };
+		6AA0FDD92C175D5700541007 /* PSMC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSMC.hpp; sourceTree = "<group>"; };
+		6AA0FDDB2C175D6700541007 /* VCF_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VCF_reader.cpp; sourceTree = "<group>"; };
+		6AA0FDDC2C175D6700541007 /* VCF_reader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VCF_reader.hpp; sourceTree = "<group>"; };
+		6AA0FDDE2C175D9F00541007 /* Rate_map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rate_map.cpp; sourceTree = "<group>"; };
+		6AA0FDDF2C175D9F00541007 /* Rate_map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rate_map.hpp; sourceTree = "<group>"; };
+		6AA0FDE12C17C11A00541007 /* Decoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Decoder.cpp; sourceTree = "<group>"; };
+		6AA0FDE22C17C11A00541007 /* Decoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decoder.hpp; sourceTree = "<group>"; };
+		6AA0FDE42C18C9F200541007 /* Scaler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scaler.cpp; sourceTree = "<group>"; };
+		6AA0FDE52C18C9F200541007 /* Scaler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scaler.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				6AA0FDD12C175D3B00541007 /* main.cpp */,
+				6AA0FDE12C17C11A00541007 /* Decoder.cpp */,
+				6AA0FDE22C17C11A00541007 /* Decoder.hpp */,
+				6AA0FDD82C175D5700541007 /* PSMC.cpp */,
+				6AA0FDE42C18C9F200541007 /* Scaler.cpp */,
+				6AA0FDE52C18C9F200541007 /* Scaler.hpp */,
+				6AA0FDD92C175D5700541007 /* PSMC.hpp */,
+				6AA0FDDB2C175D6700541007 /* VCF_reader.cpp */,
+				6AA0FDDC2C175D6700541007 /* VCF_reader.hpp */,
+				6AA0FDDE2C175D9F00541007 /* Rate_map.cpp */,
+				6AA0FDDF2C175D9F00541007 /* Rate_map.hpp */,
 			);
 			path = SINGER_pair;
 			sourceTree = "<group>";
@@ -119,7 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA0FDDA2C175D5700541007 /* PSMC.cpp in Sources */,
+				6AA0FDDD2C175D6700541007 /* VCF_reader.cpp in Sources */,
+				6AA0FDE02C175D9F00541007 /* Rate_map.cpp in Sources */,
 				6AA0FDD22C175D3B00541007 /* main.cpp in Sources */,
+				6AA0FDE32C17C11A00541007 /* Decoder.cpp in Sources */,
+				6AA0FDE62C18C9F200541007 /* Scaler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

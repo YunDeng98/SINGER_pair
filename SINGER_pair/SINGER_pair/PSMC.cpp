@@ -122,7 +122,7 @@ void PSMC::posterior_average() {
             ws += forward_probs[i][k]*backward_probs[i][k];
             wt += forward_probs[i][k]*backward_probs[i][k]*mid_points[k];
         }
-        posterior_averages[i] = wt/ws;
+        posterior_averages[i] = wt/ws*Ne;
     }
 }
 
