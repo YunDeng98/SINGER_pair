@@ -9,6 +9,8 @@
 #define PSMC_hpp
 
 #include <stdio.h>
+#include <cmath>
+#include <cassert>
 #include "Rate_map.hpp"
 #include "VCF_reader.hpp"
 
