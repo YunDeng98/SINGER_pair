@@ -122,7 +122,7 @@ void PSMC::posterior_average() {
             ws += forward_probs[i][k]*backward_probs[i][k];
             wt += forward_probs[i][k]*backward_probs[i][k]*mid_points[k];
         }
-        posterior_averages[i] = wt/ws*Ne;
+        posterior_averages[i] = wt/ws;
     }
 }
 
@@ -304,14 +304,17 @@ void PSMC::backward_transition(int j) {
     for (int k = 0; k < num_temporal_bins; k++) {
         backward_probs[j-1][k] = diagonals[k]*backward_probs[j][k] + upper_sums[k] + lower_sums[k];
     }
-    cout << accumulate(backward_probs[j-1].begin(), backward_probs[j-1].end(), 0.0) << endl;
+    // cout << accumulate(backward_probs[j-1].begin(), backward_probs[j-1].end(), 0.0) << endl;
 }
 
 void PSMC::write_posterior_average(string filename) {
     ofstream file;
     file.open(filename);
     for (int i = 0; i < spatial_grids.size() - 1; i++) {
-        file << spatial_grids[i] <<  " " << spatial_grids[i+1] << " " << posterior_averages[i] << endl;
+        // file << spatial_grids[i] <<  " " << spatial_grids[i+1] << " " << posterior_averages[i]*Ne << endl;
+        file << std::fixed << std::setprecision(0) << spatial_grids[i] << " "
+                 << std::fixed << std::setprecision(0) << spatial_grids[i+1] << " "
+                 << std::defaultfloat << posterior_averages[i] * Ne << std::endl;
     }
     return;
 }

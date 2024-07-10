@@ -16,7 +16,8 @@ class Scaler {
 public:
     
     int num_temporal_bins;
-    vector<double> temporal_grids;
+    vector<double> old_grids;
+    vector<double> new_grids;
     vector<double> mutation_counts;
     vector<double> branch_length;
     
@@ -29,6 +30,8 @@ public:
     void add_mutations(int count, double theta, double t);
     
     void add_branch_length(double t, double l);
+    
+    void compute_new_grids();
 };
 
 #endif /* Scaler_hpp */
