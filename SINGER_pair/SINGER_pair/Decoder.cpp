@@ -23,5 +23,12 @@ void Decoder::posterior_average_decode(string vcf_filename, string output_filena
     psmc.forward_algorithm();
     psmc.backward_algorithm();
     psmc.posterior_average();
+    /*
+    for (int i = 0; i < 5; i++) {
+        Scaler scaler = Scaler();
+        scaler.rescale(psmc);
+        psmc.posterior_average();
+    }
+     */
     psmc.write_posterior_average(output_filename);
 }

@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include "PSMC.hpp"
+#include "Scaler.hpp"
 
 class Decoder {
     
