@@ -312,7 +312,9 @@ void PSMC::write_posterior_average(string filename) {
     file.open(filename);
     for (int i = 0; i < spatial_grids.size() - 1; i++) {
         // file << spatial_grids[i] <<  " " << spatial_grids[i+1] << " " << posterior_averages[i]*Ne << endl;
-        file << int(spatial_grids[i]) << " " << int(spatial_grids[i+1]) << " " << posterior_averages[i] * Ne << endl;
+        file << std::fixed << std::setprecision(0) << spatial_grids[i] << " "
+                 << std::fixed << std::setprecision(0) << spatial_grids[i+1] << " "
+                 << std::defaultfloat << posterior_averages[i] * Ne << std::endl;
     }
     return;
 }

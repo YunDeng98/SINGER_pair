@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <cmath>
+#include <iomanip>
 #include <cassert>
 #include "Rate_map.hpp"
 #include "VCF_reader.hpp"
